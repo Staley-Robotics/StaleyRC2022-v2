@@ -46,11 +46,11 @@ class Robot(wpilib.TimedRobot):
             self.drivetrain.drive(0, 0)
         elif self.time.get() < 4.5:
             self.drivetrain.drive(0.35, 0)
-            self.launcher.intake.set(0)
         elif self.time.get() < 5:
             self.launcher.shooter.set(-0.675)
             self.drivetrain.drive(0, 0)
-        elif self.time.get() < 6.5:
+            self.launcher.intake.set(0)
+        elif self.time.get() < 7.5:
             self.launcher.barrel.set(-1)
         else:
             self.launcher.shooter.set(0)
