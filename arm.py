@@ -10,4 +10,4 @@ class Arm:
 
     def update(self, controller1: wpilib.XboxController):
         # self.arm[0].set(controller1.getRightY() * -0.2)
-        self.arm.set(controller1.getRightY() * -0.2)
+        self.arm.set(controller1.getRightY() * 1)
